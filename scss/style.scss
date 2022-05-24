@@ -1,0 +1,97 @@
+.navBar {
+    .collapse {
+        ul {
+            li {
+                position: relative;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 0%;
+                    height: 2px;
+                    background-color: black;
+                    top: 20px;
+                    left: 0px;
+                }
+                &:hover::before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 2px;
+                    background-color: black;
+                    top: 30px;
+                    left: 0px;
+                }
+                width: 100%;
+                &:hover>.hover-List {
+                    opacity: 1;
+                }
+                .hover-List {
+                    opacity: 0;
+                    position: absolute;
+                    z-index: 9999;
+                    visibility: visible;
+                    width: 130px;
+                    left: 0px;
+                    background-color: white;
+                    ul {
+                        li {
+                            list-style: none;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: black;
+                            // &::before {
+                            //     content: "";
+                            //     position: absolute;
+                            //     width: 0%;
+                            //     height: 2px;
+                            //     background-color: black;
+                            //     top: 0px;
+                            //     left: 0px;
+                            // }
+                            &:hover::before {
+                                content: "";
+                                position: absolute;
+                                width: 100%;
+                                height: 2px;
+                                background-color: black;
+                                top: 0px;
+                                left: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        i {
+            margin-left: 15px;
+        }
+    }
+}
+
+#carouselExampleFade {
+    position: relative;
+    .carousel-inner {
+        .carousel-item {
+            img {
+                height: 700px;
+                max-width: 100%;
+                z-index: 20;
+                opacity: 1;
+            }
+        }
+    }
+    .carousel-content {
+        left: 0px;
+        top: 20px;
+        z-index: 1;
+        text-align: center;
+        align-items: center;
+        margin: 40px;
+        width: 400px;
+        position: absolute;
+        .h2 {
+            font-size: 30px;
+        }
+    }
+}

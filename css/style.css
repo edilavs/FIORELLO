@@ -1,0 +1,90 @@
+.navBar .collapse ul li {
+  position: relative;
+  width: 100%;
+}
+
+.navBar .collapse ul li::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  top: 20px;
+  left: 0px;
+}
+
+.navBar .collapse ul li:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  top: 30px;
+  left: 0px;
+}
+
+.navBar .collapse ul li:hover > .hover-List {
+  opacity: 1;
+}
+
+.navBar .collapse ul li .hover-List {
+  opacity: 0;
+  position: absolute;
+  z-index: 9999;
+  visibility: visible;
+  width: 130px;
+  left: 0px;
+  background-color: white;
+}
+
+.navBar .collapse ul li .hover-List ul li {
+  list-style: none;
+}
+
+.navBar .collapse ul li .hover-List ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.navBar .collapse ul li .hover-List ul a:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  top: 0px;
+  left: 0px;
+}
+
+.navBar .collapse i {
+  margin-left: 15px;
+}
+
+#carouselExampleFade {
+  position: relative;
+}
+
+#carouselExampleFade .carousel-inner .carousel-item img {
+  height: 700px;
+  max-width: 100%;
+  z-index: 20;
+  opacity: 1;
+}
+
+#carouselExampleFade .carousel-content {
+  left: 0px;
+  top: 20px;
+  z-index: 1;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 40px;
+  width: 400px;
+  position: absolute;
+}
+
+#carouselExampleFade .carousel-content .h2 {
+  font-size: 30px;
+}
+/*# sourceMappingURL=style.css.map */
