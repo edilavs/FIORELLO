@@ -1,68 +1,59 @@
 .navBar {
     .collapse {
         ul {
-            li {
+            .nav-item {
                 position: relative;
-                &::before {
-                    content: "";
-                    position: absolute;
-                    width: 0%;
-                    height: 2px;
-                    background-color: black;
-                    top: 20px;
-                    left: 0px;
-                }
+
                 &:hover::before {
                     content: "";
                     position: absolute;
                     width: 100%;
-                    height: 2px;
+                    height: 1px;
                     background-color: black;
                     top: 30px;
                     left: 0px;
                 }
-                width: 100%;
+
                 &:hover>.hover-List {
                     opacity: 1;
                 }
+
                 .hover-List {
                     opacity: 0;
                     position: absolute;
-                    z-index: 9999;
+                    z-index: 9;
                     visibility: visible;
                     width: 130px;
                     left: 0px;
                     background-color: white;
+
                     ul {
                         li {
+                            position: relative;
                             list-style: none;
-                        }
-                        a {
-                            text-decoration: none;
-                            color: black;
-                            &::before {
-                                content: "";
-                                position: absolute;
-                                width: 0%;
-                                height: 2px;
-                                background-color: black;
-                                top: 0px;
-                                left: 0px;
-                            }
-                            &:hover::before {
-                                content: "";
-                                position: absolute;
-                                width: 100%;
-                                height: 2px;
-                                background-color: black;
-                                top: 0px;
-                                left: 0px;
+
+                            a {
+                                text-decoration: none;
+                                color: black;
+
+                                &:hover::before {
+                                    content: "";
+                                    position: absolute;
+                                    width: 90%;
+                                    height: 1px;
+                                    background-color: black;
+                                    top: 20px;
+                                    left: 0px;
+                                }
+
                             }
                         }
+
                     }
                 }
             }
         }
+
         i {
             margin-left: 15px;
         }
@@ -71,6 +62,7 @@
 
 #carouselExampleFade {
     position: relative;
+
     .carousel-inner {
         .carousel-item {
             img {
@@ -81,35 +73,47 @@
             }
         }
     }
+
     .carousel-content {
-        left: 0px;
-        top: 20px;
+        left: 180px;
+        top: 150px;
         z-index: 1;
-        text-align: center;
+        
         align-items: center;
         margin: 40px;
         width: 400px;
         position: absolute;
+
         .h2 {
-            font-size: 30px;
+            font-size: 38px;
+        }
+        .content-p{
+            margin-top: 30px;
+            font-size: 18px;
+            margin-bottom: 30px;
         }
     }
+
     #filter-flowers {
         ul {
             display: flex;
+
             li {
                 list-style: none;
                 margin: 20px;
                 font-size: 18px;
                 transition: all .8s;
+
                 &:hover {
                     color: #f34f3f;
                 }
             }
         }
+
         .card-element {
             width: 100%;
             height: 500px;
+
             &:hover {
                 .card-body {
                     .add-to {
@@ -118,12 +122,14 @@
                             position: absolute;
                             left: 90px;
                             transition: 1s all;
+
                             &:hover {
                                 color: #f34f3f;
                                 cursor: pointer;
                             }
                         }
                     }
+
                     .prise {
                         span {
                             opacity: 0;
@@ -131,6 +137,7 @@
                     }
                 }
             }
+
             .card-img {
                 img {
                     width: 80%;
@@ -138,16 +145,20 @@
                     margin: 0 auto;
                 }
             }
+
             .card-body {
                 text-align: center;
+
                 .prise {
                     span {
                         transition: .5s all;
                         opacity: 1;
                     }
                 }
+
                 .add-to {
                     position: relative;
+
                     span {
                         top: -24px;
                         left: 30px;
@@ -158,18 +169,23 @@
             }
         }
     }
+
     .active {
         color: #f34f3f;
     }
+
     #valentine {
         background-color: rgb(238, 238, 238);
         padding: 60px;
+
         .flower-card {
             .img-div {
                 position: relative;
+
                 img {
                     width: 90%;
                 }
+
                 .icon {
                     width: 70px;
                     height: 70px;
@@ -178,6 +194,7 @@
                     top: 40%;
                     left: 35%;
                     background-color: white;
+
                     .fa-play {
                         font-size: 29px;
                         color: red;
@@ -188,42 +205,54 @@
                 }
             }
         }
+
         .valentineText {
             color: #f34f3f;
         }
+
         .video-text {
             p {
                 font-size: 23px;
             }
         }
+
         .occasions {
             line-height: 2;
+
             span {
                 font-size: 20px;
             }
+
             .fa-brands {
                 color: #f34f3f;
             }
         }
     }
+
     .btn-lights {
         background-color: white;
     }
+
     #experts {
         padding: 40px;
+
         .expertsContent {
             h1 {
                 font-size: 50px;
                 font-family: Georgia, 'Times New Roman', Times, serif;
                 font-weight: 5px;
             }
+
             p {
                 font-size: 25px;
             }
+
             padding: 40px;
         }
+
         .photos {
             display: flex;
+
             .expPhotos {
                 h1 {
                     margin-top: 5px;
@@ -231,6 +260,7 @@
                     font-size: 20px;
                     font-family: Georgia, 'Times New Roman', Times, serif;
                 }
+
                 p {
                     font-size: 15px;
                     text-align: center;
@@ -238,18 +268,22 @@
             }
         }
     }
+
     #join {
         background-image: url("https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/h3-background-img.jpg");
         background-attachment: fixed;
+
         .join-content {
             padding: 150px;
             text-align: center;
             align-items: center;
+
             h1 {
                 color: white;
                 text-align: center;
                 margin-left: 135px;
             }
+
             .input-button {
                 .input {
                     padding: 13px;
@@ -257,6 +291,7 @@
                     width: 660px;
                     margin: 0px;
                 }
+
                 button {
                     background-color: #f34f3f;
                     color: white;
@@ -267,33 +302,42 @@
             }
         }
     }
+
     #blog {
         background-color: rgb(241, 241, 241);
         padding: 70px;
+
         .blog-content {
             text-align: center;
+
             h1 {
                 font-family: Georgia, 'Times New Roman', Times, serif;
             }
+
             p {
                 text-align: center;
                 font-size: 15px;
             }
         }
+
         .images-info {
             .img-date {
                 position: relative;
+
                 .img-div {
                     overflow: hidden;
+
                     &:hover img {
                         transform: scale(1.2);
                     }
+
                     img {
                         width: 100%;
                         transform: scale(1);
                         transition: 1s all;
                     }
                 }
+
                 .date {
                     padding: 9px;
                     background-color: gainsboro;
@@ -301,12 +345,14 @@
                     top: 2px;
                     left: 2px;
                 }
+
                 p {
                     font-size: 25px;
                     text-align: center;
                     margin: 25px;
                     font-family: Georgia, 'Times New Roman', Times, serif;
                 }
+
                 small {
                     text-align: center;
                     align-items: center;
@@ -315,33 +361,145 @@
             }
         }
     }
+
     #expertSlider {
-        .carousel-inner {
-            .carousel-item {
-                img {
-                    width: 200px;
-                    height: 200px;
-                    margin: 0 auto;
+        .row {
+            margin-top: 40px;
+
+            .carousel-inner {
+                width: 100%;
+                height: 400px;
+                position: relative;
+
+                .carousel-item {
+
                     text-align: center;
-                    align-items: center;
-                    position: absolute;
+
+                    img {
+
+                        margin-top: 40px;
+                        text-align: center;
+                        width: 120px;
+                        height: 120px;
+                        // align-items: center;
+                        // position: absolute;
+                    }
+
+                    p {
+                        position: absolute;
+                        top: 160px;
+                        color: black !important;
+                        font-size: 28px;
+                    }
+
+                    h5 {
+                        margin-top: 80px;
+
+                        top: 40px;
+                        color: black;
+
+                    }
+
+                    .ds-4 {
+
+                        color: black;
+                        top: 55px;
+                    }
                 }
-                p {
-                    color: black !important;
-                    font-size: 28px;
+            }
+
+            .carousel-control-prev {
+
+                i {
+
+                    font-size: 50px;
+                    color: grayscale($color: #000000);
+                }
+            }
+
+            .carousel-control-next {
+                i {
+                    font-size: 50px;
+                    color: grayscale($color: #000000);
+                }
+            }
+
+        }
+    }
+
+}
+
+#footerSection {
+    background-color: beige;
+    padding: 80px;
+    padding-left: 240px;
+    justify-content: center;
+    margin: 0 auto;
+
+    .ds-4 {
+        margin-top: 40px;
+        color: black;
+    }
+
+    ul {
+        list-style: none;
+        text-decoration: none;
+        padding: 0px;
+        margin: 0px;
+        margin-top: 25px;
+
+        li {
+            a {
+                text-decoration: none;
+                color: rgba(128, 128, 128, 0.573);
+
+                &:hover {
+                    color: #f34f3f;
                 }
             }
         }
-        .carousel-control-prev {
-            i {
-                font-size: 50px;
-                color: red;
+    }
+
+    .footerInfo {
+        margin-top: 90px;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 88%;
+            height: 2px;
+            background-color: rgba(128, 128, 128, 0.573);
+            top: -30px;
+            left: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgba(128, 128, 128, 0.573);
+            &:hover {
+                color: #f34f3f;
             }
         }
-        .carousel-control-next {
-            i {
-                color: red;
-            }
+
+    }
+   
+    .fixed-button{
+        background-attachment: fixed;
+        position: relative;
+    
+        button{
+            position: absolute;
+            padding: 10px 20px;
+            background-color: #f34f3f;
+            color: aliceblue;
+            font-size: 25px;
+            align-items: center;
+            font-weight: bold;
+            border:#f34f3f;
+            top: 0px;
+            right: 0px;
         }
+      
     }
 }

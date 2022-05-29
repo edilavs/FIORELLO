@@ -1,68 +1,48 @@
-.navBar .collapse ul li {
+.navBar .collapse ul .nav-item {
   position: relative;
-  width: 100%;
 }
 
-.navBar .collapse ul li::before {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  background-color: black;
-  top: 20px;
-  left: 0px;
-}
-
-.navBar .collapse ul li:hover::before {
+.navBar .collapse ul .nav-item:hover::before {
   content: "";
   position: absolute;
   width: 100%;
-  height: 2px;
+  height: 1px;
   background-color: black;
   top: 30px;
   left: 0px;
 }
 
-.navBar .collapse ul li:hover > .hover-List {
+.navBar .collapse ul .nav-item:hover > .hover-List {
   opacity: 1;
 }
 
-.navBar .collapse ul li .hover-List {
+.navBar .collapse ul .nav-item .hover-List {
   opacity: 0;
   position: absolute;
-  z-index: 9999;
+  z-index: 9;
   visibility: visible;
   width: 130px;
   left: 0px;
   background-color: white;
 }
 
-.navBar .collapse ul li .hover-List ul li {
+.navBar .collapse ul .nav-item .hover-List ul li {
+  position: relative;
   list-style: none;
 }
 
-.navBar .collapse ul li .hover-List ul a {
+.navBar .collapse ul .nav-item .hover-List ul li a {
   text-decoration: none;
   color: black;
 }
 
-.navBar .collapse ul li .hover-List ul a::before {
+.navBar .collapse ul .nav-item .hover-List ul li a:hover::before {
   content: "";
   position: absolute;
-  width: 0%;
-  height: 2px;
+  width: 90%;
+  height: 1px;
   background-color: black;
-  top: 0px;
-  left: 0px;
-}
-
-.navBar .collapse ul li .hover-List ul a:hover::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: black;
-  top: 0px;
+  top: 20px;
   left: 0px;
 }
 
@@ -82,10 +62,9 @@
 }
 
 #carouselExampleFade .carousel-content {
-  left: 0px;
-  top: 20px;
+  left: 180px;
+  top: 150px;
   z-index: 1;
-  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -95,7 +74,13 @@
 }
 
 #carouselExampleFade .carousel-content .h2 {
-  font-size: 30px;
+  font-size: 38px;
+}
+
+#carouselExampleFade .carousel-content .content-p {
+  margin-top: 30px;
+  font-size: 18px;
+  margin-bottom: 30px;
 }
 
 #carouselExampleFade #filter-flowers ul {
@@ -356,28 +341,128 @@
   font-size: 15px;
 }
 
-#carouselExampleFade #expertSlider .carousel-inner .carousel-item img {
-  width: 200px;
-  height: 200px;
-  margin: 0 auto;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
+#carouselExampleFade #expertSlider .row {
+  margin-top: 40px;
 }
 
-#carouselExampleFade #expertSlider .carousel-inner .carousel-item p {
+#carouselExampleFade #expertSlider .row .carousel-inner {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+#carouselExampleFade #expertSlider .row .carousel-inner .carousel-item {
+  text-align: center;
+}
+
+#carouselExampleFade #expertSlider .row .carousel-inner .carousel-item img {
+  margin-top: 40px;
+  text-align: center;
+  width: 120px;
+  height: 120px;
+}
+
+#carouselExampleFade #expertSlider .row .carousel-inner .carousel-item p {
+  position: absolute;
+  top: 160px;
   color: black !important;
   font-size: 28px;
 }
 
-#carouselExampleFade #expertSlider .carousel-control-prev i {
-  font-size: 50px;
-  color: red;
+#carouselExampleFade #expertSlider .row .carousel-inner .carousel-item h5 {
+  margin-top: 80px;
+  top: 40px;
+  color: black;
 }
 
-#carouselExampleFade #expertSlider .carousel-control-next i {
-  color: red;
+#carouselExampleFade #expertSlider .row .carousel-inner .carousel-item .ds-4 {
+  color: black;
+  top: 55px;
+}
+
+#carouselExampleFade #expertSlider .row .carousel-control-prev i {
+  font-size: 50px;
+  color: black;
+}
+
+#carouselExampleFade #expertSlider .row .carousel-control-next i {
+  font-size: 50px;
+  color: black;
+}
+
+#footerSection {
+  background-color: beige;
+  padding: 80px;
+  padding-left: 240px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+
+#footerSection .ds-4 {
+  margin-top: 40px;
+  color: black;
+}
+
+#footerSection ul {
+  list-style: none;
+  text-decoration: none;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 25px;
+}
+
+#footerSection ul li a {
+  text-decoration: none;
+  color: rgba(128, 128, 128, 0.573);
+}
+
+#footerSection ul li a:hover {
+  color: #f34f3f;
+}
+
+#footerSection .footerInfo {
+  margin-top: 90px;
+  position: relative;
+}
+
+#footerSection .footerInfo::after {
+  content: "";
+  position: absolute;
+  width: 88%;
+  height: 2px;
+  background-color: rgba(128, 128, 128, 0.573);
+  top: -30px;
+  left: 20px;
+}
+
+#footerSection .footerInfo a {
+  text-decoration: none;
+  color: rgba(128, 128, 128, 0.573);
+}
+
+#footerSection .footerInfo a:hover {
+  color: #f34f3f;
+}
+
+#footerSection .fixed-button {
+  background-attachment: fixed;
+  position: relative;
+}
+
+#footerSection .fixed-button button {
+  position: absolute;
+  padding: 10px 20px;
+  background-color: #f34f3f;
+  color: aliceblue;
+  font-size: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  border: #f34f3f;
+  top: 0px;
+  right: 0px;
 }
 /*# sourceMappingURL=style.css.map */
